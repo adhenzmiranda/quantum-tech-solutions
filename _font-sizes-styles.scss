@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;400;500;600;700&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+// Headings
+$h1: 61px;
+$h2: 49px;
+$h3: 39px;
+
+// Subtitles
+$s1: 31px;
+$s2: 25px;
+$s3: 20px;
+
+// Paragraphs
+$p1: 16px;
+$p2: 13px;
+$p3: 10px;
+$p1-desktop: 24px;
+$p2-desktop-reviews:20px;
+
+@mixin font($font-family, $font-size) {
+    font-family: $font-family;
+    font-size: $font-size;
+}
+
+// Headings
+@mixin h1main {
+    @include font('Libre Franklin', $h1);
+    text-align: center;
+}
+
+@mixin h2main {
+    @include font('Libre Franklin', $h2);
+    text-align: center;
+}
+
+@mixin h3main {
+    @include font('Libre Franklin', $h3);
+    text-align: center;
+}
+
+// Subtitles
+@mixin s1main {
+    @include font('Hind Guntur', $s1);
+}
+
+@mixin s2main {
+    @include font('Hind Guntur', $s2);
+}
+
+@mixin s3main {
+    @include font('Hind Guntur', $s3);
+}
+
+// Paragraphs
+@mixin p1main {
+    @include font('Mulish', $p1);
+}
+
+@mixin p1main-desktop {
+    @include font('Mulish', $p1-desktop);
+}
+
+@mixin p2main-desktop-reviews {
+    @include font('Mulish', $p2-desktop-reviews);
+}
+
+@mixin p2main {
+    @include font('Mulish', $p2);
+}
+
+@mixin p3main {
+    @include font('Mulish', $p3);
+}
+

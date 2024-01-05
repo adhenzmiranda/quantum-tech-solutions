@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="icon" href="Images/favicon.ico">
+    <title>QuantumTech Solutions</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav id="nav" class="grid">
+        <picture class="logo">
+            <source media="(min-width: 1024px)" srcset="Images/navbar-assets/logo-vertical-desktop.png">
+            <img src="Images/navbar-assets/logo-vertical-mobile-tablet.png" class="logonav">
+
+        </picture>
+
+        <div class="menu">
+            <div class="nav-img">
+                <a href="#nav" onClick="show()">
+                    <img src="Images/navbar-assets/hamburger-menu.svg" class="menu-icon">
+                </a>
+            </div>
+            
+            <ul class="navbar-list-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="grid">
+        <div class="main-hero-img">
+            <!-- Image -->
+            <picture class="hero-img">
+                <source media="(min-width: 1024px)" srcset="Images/hero-page-assets/main-hero-image-desktop.jpg">
+                <source media="(min-width: 711px)" srcset="Images/hero-page-assets/main-hero-image-tablet.jpg">
+                <img src="Images/hero-page-assets/main-hero-image-mobile.jpg" alt="pic for hero">
+            </picture>
+            
+        </div>
+        <div class="hero-content">
+            
+            <!-- Text -->
+            <h1 class="hero-text heading">
+                Redefining Your <span class="hero-potential-text">Potential </span> With QuantumTech Solutions
+            </h1>
+            
+            <!-- Button -->
+            <h2 class="subtitle">
+                <a href="#contact-us" class="contact-hero-btn">Contact Us</a>
+            </h2>
+
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="grid">
+        <div class="about-us-container">
+            <!-- H1 Title -->
+            <h1 class="about-us heading">QuantumTech Solutions</h1>
+
+            <!-- Paragraph -->
+            <p class="about-us paragraph">Welcome to QuantumTech Solutions, where innovation meets excellence in the realm of Information Technology. At QuantumTech, we believe in pushing boundaries, embracing change, and propelling businesses into the future.</p>
+
+            <!-- Button -->
+            <a href="#read-more" class="read-more">Why Choose Us?<img src="Images/main-assets/arrow-right.svg" class="arrow-right"></a>
+
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="grid">
+        <!-- Services Title -->
+        <h1 class="services-h heading">Our Services</h1>
+        
+        <!-- Services Container -->
+        <div class="services-container">
+
+            <!-- Service 1 -->
+            <div class="service1 service">
+                <div class="service-top grid">
+                    <!-- Service Image -->
+                    <picture class="service-pic">
+                        <source media="(min-width:1024px)" srcset="Images/services-assets/cloud-computing-tablet-desktop.svg">
+                        <img src="Images/services-assets/cloud-computing-mobile.svg" class="service-img">
+                    </picture>
+    
+                    <!-- Subtitle -->
+                    <h2 class="subtitle">
+                        Cloud Computing Services
+                    </h2>
+                </div>
+                
+                <!-- Paragraph -->
+                <p class="servicep paragraph">
+                    Tailored cloud solutions, migration, and ongoing management for seamless operations.
+                </p>
+
+                <!-- Learn More Button -->
+                <a href="#learn-more paragraph" class="learn-more-btn">Learn More<img src="Images/main-assets/arrow-right.svg" class="arrow-right"></a>
+            </div>
+            
+            <!-- Service 2 -->
+            <div class="service2 service">
+                <div class="service-top grid">
+                    <!-- Service Image -->
+                    <picture class="service-pic">
+                        <source media="(min-width:1024px)" srcset="Images/services-assets/cybersecurity-tablet-desktop.svg">
+                        <img src="Images/services-assets/cybersecurity-mobile.svg" class="service-img">
+                    </picture>
+    
+                    <!-- Subtitle -->
+                    <h2 class="subtitle">
+                        Cybersecurity
+                    </h2>
+                </div>
+    
+                <p class="servicep paragraph">
+                    Fortify digital defenses with advanced threat detection, encryption, and security audits.
+                </p>
+    
+                <a href="#learn-more paragraph" class="learn-more-btn">Learn More<img src="Images/main-assets/arrow-right.svg" class="arrow-right"></a>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service3 service">
+                <div class="service-top grid">
+                    <!-- Service Image -->
+                    <picture class="service-pic">
+                        <source media="(min-width:1024px)" srcset="Images/services-assets/it-assistance-tablet-desktop.svg">
+                        <img src="Images/services-assets/it-assistance-mobile.svg" class="service-img">
+                    </picture>
+    
+                    <!-- Subtitle -->
+                    <h2 class="subtitle">
+                        IT Assistance
+                    </h2>
+                </div>
+    
+                <p class="servicep paragraph">
+                    Providing technical aid, troubleshooting, and support for digital systems and users.
+                </p>
+    
+                <a href="#learn-more paragraph" class="learn-more-btn">Learn More<img src="Images/main-assets/arrow-right.svg" class="arrow-right"></a>
+            </div>
+            
+            <!-- Service 4 -->
+            <div class="service4 service">
+                <div class="service-top grid">
+                    <!-- Service Image -->
+                    <picture class="service-pic">
+                        <source media="(min-width:1024px)" srcset="Images/services-assets/data-insights-tablet-desktop.svg">
+                        <img src="Images/services-assets/data-insights-mobile.svg" class="service-img">
+                    </picture>
+    
+                    <!-- Subtitle -->
+                    <h2 class="subtitle data">
+                        Data Insights
+                    </h2>
+                </div>
+    
+                <p class="servicep paragraph">
+                    Uncovering actionable insights through data interpretation and strategic analysis for informed decision-making.
+                </p>
+    
+                <a href="#learn-more paragraph" class="learn-more-btn">Learn More<img src="Images/main-assets/arrow-right.svg" class="arrow-right"></a>
+            </div>
+            
+            <!-- Service 5 -->
+            <div class="service5 service">
+                <div class="service-top grid">
+                    <!-- Service Image -->
+                    <picture class="service-pic">
+                        <source media="(min-width:1024px)" srcset="Images/services-assets/nas-setup-tablet-desktop.svg">
+                        <img src="Images/services-assets/nas-setup-mobile.svg" class="service-img">
+                    </picture>
+    
+                    <!-- Subtitle -->
+                    <h2 class="subtitle">
+                        NAS Setup
+                    </h2>
+                </div>
+    
+                <p class="servicep paragraph">
+                    Optimizing data storage for seamless access and enhanced security.
+                </p>
+    
+                <a href="#learn-more paragraph" class="learn-more-btn">Learn More<img src="Images/main-assets/arrow-right.svg" class="arrow-right"></a>
+            </div>
+            
+            <!-- Service 6 -->
+            <div class="service6 service">
+                <div class="service-top grid">
+                    <!-- Service Image -->
+                    <picture class="app-pic service-pic">
+                        <source media="(min-width:1024px)" srcset="Images/services-assets/app-dev-tablet-desktop.svg">
+                        <img src="Images/services-assets/app-dev-mobile.svg" class="service-img">
+                    </picture>
+    
+                    <!-- Subtitle -->
+                    <h2 class="subtitle">
+                        Application Development
+                    </h2>
+                </div>
+    
+                <p class="servicep paragraph">
+                    Crafting tailored, innovative solutions for your unique business needs.
+                </p>
+    
+                <a href="#learn-more paragraph" class="learn-more-btn">Learn More<img src="Images/main-assets/arrow-right.svg" class="arrow-right"></a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clients">
+        <!-- Clients Title -->
+        <h1 class="clients heading">Our Clients</h1>
+            <div class="clients-container">
+
+                <!-- Client 1 -->
+                <div class="client1 clients">
+                    <div class="clients-details">
+                        <img src="Images/clients-assets/reviewer-1.png" class="client-img">
+                        <h3 class="subtitle">"Top of the class service!"</h3>
+                        <p class="paragraph">-Anna Vincent</p>
+                        <button class="review-btn">Read Review<img src="Images/main-assets/arrow-right.svg" class="arrow-right arrow-clients"></button>
+                    </div>
+
+                    <div class="review1 review">
+                        <p class="paragraph">
+                            “QuantumTech's transformative Cloud Computing, efficient NAS setup, and insightful data analysis provide exceptional support for personal and business IT needs.”
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Client 2 -->
+                <div class="client2 clients">
+                    <div class="clients-details">
+                        <img src="Images/clients-assets/reviewer-2.png" class="client-img">
+                        <h3 class="subtitle">“Best of its class!”</h3>
+                        <p class="paragraph">-MANTL</p>
+                        <button class="review-btn">Read Review<img src="Images/main-assets/arrow-right.svg" class="arrow-right arrow-clients"></button>
+                    </div>
+
+                    <div class="review2 review">
+                        <p class="paragraph">
+                            “QuantumTech's NAS setup, software development, and robust cybersecurity ensure smooth operations and productivity, establishing them as a trusted IT partner.”
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Client 3 -->
+                <div class="client3 clients">
+                    <div class="clients-details">
+                        <img src="Images/clients-assets/reviewer-3.png" class="client-img">
+                        <h3 class="subtitle">“One of a kind!”</h3>
+                        <p class="paragraph">-Bristol Myers Squibb</p>
+                        <button class="review-btn">Read Review<img src="Images/main-assets/arrow-right.svg" class="arrow-right arrow-clients"></button>
+                    </div>
+
+                    <div class="review3 review">
+                        <p class="paragraph">
+                            “QuantumTech's expert IT support, NAS setup, software development, and cybersecurity shape our success. Their invaluable contribution ensures streamlined operations and security, making them an essential partner in our journey.”
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Client 4 -->
+                <div class="client4 clients">
+                    <div class="clients-details">
+                        <img src="Images/clients-assets/reviewer-4.png" class="client-img">
+                        <h3 class="subtitle">“Traversable Solutions”</h3>
+                        <p class="paragraph">-Lisa Frank</p>
+                        <button class="review-btn">Read Review<img src="Images/main-assets/arrow-right.svg" class="arrow-right arrow-clients"></button>
+                    </div>
+
+                    <div class="review4 review">
+                        <p class="paragraph">
+                            “QuantumTech's seamless NAS setup, responsive IT assistance, and unmatched cybersecurity redefine excellence, delivering game-changing tech solutions for personal and professional needs.”
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact-us">
+        <!-- Contact Us Title -->
+        <h1 class="contact-us-heading heading">Contact Us</h1>
+        <div class="contact-us-container">
+
+            <div class="contact-title-container">
+                <h3 class="subtitle-contact">Get In Touch</h3>
+                <p class="subtitle-contact">Ready to redefine your IT strategy? Let's chat!</p>
+                <div class="main-contacts">
+                    <p class="phone contacts"><img src="Images/contact-assets/phone.svg" class="contacts-img">+971-34-1254322</p>
+                    <p class="email contacts"><img src="Images/contact-assets/email.svg" class="contacts-img">contact@quantumtech.com</p>
+                    <p class="location contacts"><img src="Images/contact-assets/building.svg" class="contacts-img">P.O. Box 7534, Quantum Tower, Tech Park Avenue, Nexus City, Silicon Vista</p>
+                </div>
+            </div>
+    
+            <div class="contact-form">
+                <form class="contact-form-container">
+                    <input type="text" class="name contact-input" name="name" placeholder="Name">
+                    <input type="email" class="email contact-input" name="email" placeholder="E-mail Address">
+                    <input type="tel" class="contact contact-input" name="contact" placeholder="Contact">
+                    <textarea class="contact-input-message" name="message" placeholder="Message"></textarea>
+                    <button class="contact-btn">Send</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+    
+    <!-- Footer -->
+    <section id="footer" class="grid">
+        <div class="footer-content-top">
+            <div class="footer-contact">
+                <h3 class="footer-subtitle"><img src="Images/footer-assets/bullets.svg">Contact Us</h3>
+                <p class="footer-p paragraph"><img src="Images/footer-assets/list-bullet.svg">Get In Touch</p>
+                <p class="footer-p paragraph"><img src="Images/contact-assets/phone.svg" class="contacts-img">+971-34-1254322</p>
+                <p class="footer-p paragraph"><img src="Images/contact-assets/email.svg" class="contacts-img">contact@quantumtech.com</p>
+                <p class="footer-p paragraph"><img src="Images/contact-assets/building.svg" class="contacts-img">P.O. Box 7534, Quantum Tower, Tech Park Avenue, Nexus City, Silicon Vista</p>
+            </div>
+
+            <div class="footer-services">
+                <h3 class="footer-subtitle"><img src="Images/footer-assets/bullets.svg">Our Services</h3>
+                <p class="footer-p paragraph"><img src="Images/footer-assets/list-bullet.svg">Cloud Computing</p>
+                <p class="footer-p paragraph"><img src="Images/footer-assets/list-bullet.svg">Cybersecurity</p>
+                <p class="footer-p paragraph"><img src="Images/footer-assets/list-bullet.svg">IT Assistance</p>
+                <p class="footer-p paragraph"><img src="Images/footer-assets/list-bullet.svg">Data Insights</p>
+                <p class="footer-p paragraph"><img src="Images/footer-assets/list-bullet.svg">NAS Setup</p>
+                <p class="footer-p paragraph"><img src="Images/footer-assets/list-bullet.svg">Application/Software Development</p>
+            </div>
+        </div>
+
+        <div class="footer-content-middle">
+            <div class="footer-about-us">
+                <h3 class="footer-subtitle"><img src="Images/footer-assets/bullets.svg">About Us</h3>
+                <p class="footer-p paragraph"><img src="Images/footer-assets/list-bullet.svg">Our Mission</p>
+                <p class="footer-p paragraph"><img src="Images/footer-assets/list-bullet.svg">Why QuantumTech</p>
+            </div>
+            <div class="footer-socials">
+                <h3 class="footer-subtitle"><img src="Images/footer-assets/bullets.svg">Socials</h3>
+                <div class="socials-links">
+                    <img src="Images/footer-assets/facebook.png" class="socials-img">
+                    <img src="Images/footer-assets/instagram.png" class="socials-img">
+                    <img src="Images/footer-assets/linkedin.png" class="socials-img">
+                    <img src="Images/footer-assets/x.png" class="socials-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-content-bottom">
+            <div class="footer-bottom-container">
+                <img src="Images/footer-assets/logo-horizontal.png">
+                <p class="paragraph">© 2023 QuantumTech. All Rights Reserved.</p>
+                <a href="#hero" class="to-the-top">
+                    <img src="Images/footer-assets/arrow-up.svg"> 
+                </a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
